@@ -50,11 +50,9 @@ to
 
 Do same as in `res/values-21`.
 
-```javascript
-lder. (Important!)
-
 5. Just to be clear, below is what your build.gradle file should look like for a basic out of the box working Aide project using the latest supported support libraries. I hope you find this post useful.
 
+```javascript
 apply plugin: 'com.android.application'
 
 android {
