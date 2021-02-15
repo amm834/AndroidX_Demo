@@ -21,7 +21,7 @@ buildToolsVersion "27.+"
 
 1. Add 
 
-```
+```javascript
 compile ('android.arch.core:runtime:+') {
        force = true
 }   
@@ -38,13 +38,13 @@ The above is needed as there is an issue with Aide and AppCompatActivity not loa
 
 Change it, from
 
-```
+```xml
 <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
 ```
 
 to
 
-```
+```xml
 <style name="AppTheme" parent="Theme.AppCompat.Light">
 ```
 
@@ -86,3 +86,7 @@ compile 'com.android.support:appcompat-v7:27.+'
 compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 ```
+
+If you use `AIDE for Android Development`, follow 
+
+[How to import android.support.v7.* (appcompat) to AIDE](https://stackoverflow.com/questions/47087362/how-to-import-android-support-v7-appcompat-to-aide)
