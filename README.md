@@ -12,14 +12,14 @@ com.android.support:appcompat-v7:27.+
 libriaries to your project.
 This will use from Apache Maven.
 
-1. Open `build.gradle` and change like below
+2. Open `build.gradle` and change like below
 
 ```
 compileSdkVersion 27
 buildToolsVersion "27.+"
 ```
 
-1. Add 
+3. Add 
 
 ```javascript
 compile ('android.arch.core:runtime:+') {
@@ -34,7 +34,7 @@ to your dependemcies.
 The above is needed as there is an issue with Aide and AppCompatActivity not loading all the required libraries. This will be fixed soon hopefully
 
 
-1. Go to `res/values`
+4. Go to `res/values`
 
 Change it, from
 
@@ -53,7 +53,7 @@ Do same as in `res/values-21`.
 ```javascript
 lder. (Important!)
 
-6.Just to be clear, below is what your build.gradle file should look like for a basic out of the box working Aide project using the latest supported support libraries. I hope you find this post useful.
+5. Just to be clear, below is what your build.gradle file should look like for a basic out of the box working Aide project using the latest supported support libraries. I hope you find this post useful.
 
 apply plugin: 'com.android.application'
 
